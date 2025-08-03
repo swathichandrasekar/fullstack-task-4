@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillUp Portal – Your Personalized Learning Journey</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero img {
+      width: 200px;
+      margin-top: 30px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .colored-box {
+      background-color: #fce4ec;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .features .box {
+      background-color: #e1bee7;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 200px;
+      max-width: 250px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background: #f1f8e9;
+      border-radius: 10px;
+    }
+    input, select, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+  
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SkillUp Portal</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to SkillUp Portal</h1>
+    <p>"Connecting Minds. Building Futures."</p>
+    <br>
+    <a href="#signup" class="join-btn">Join</a>
+
+  </section>
+
+  <section class="section" id="about">
+  <h2>About Us</h2>
+  <div class="colored-box">
+    <p>
+      SkillUp Portal is a student-centric learning platform designed to guide learners on their educational journey.
+      We offer dynamic courses, expert mentors, and an intuitive interface to help every student upskill at their own pace.
+    </p>
+    <p>
+      Whether you're a beginner or looking to specialize, our portal offers the right tools and environment to grow.
+      Join a community of passionate learners and build your future with SkillUp.
+    </p>
+  </div>
+</section>
+
+
+ <section class="section" id="features">
+  <h2>Features</h2>
+  <div class="features">
+    <div class="box">
+      <h3>Flexible Courses</h3>
+      <p>Learn at your own pace with modules designed for easy understanding and accessibility.</p>
+    </div>
+    <div class="box">
+      <h3>Mentorship Support</h3>
+      <p>Connect with experienced mentors to receive personalized guidance and feedback.</p>
+    </div>
+    <div class="box">
+      <h3>Skill Assessment</h3>
+      <p>Regular quizzes and projects help track your progress and reinforce learning.</p>
+    </div>
+    <div class="box">
+      <h3>Interactive UI</h3>
+      <p>Our user-friendly interface ensures a smooth and engaging learning experience.</p>
+    </div>
+  </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+
+    form {
+      background: white;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .field-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .error {
+      color: red;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    .success {
+      color: green;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      top: 45%;
+      right: 10px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background-image: url("https://cdn-icons-png.flaticon.com/512/709/709612.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    .toggle-password.show {
+      background-image: url("https://cdn-icons-png.flaticon.com/512/709/709611.png");
+    }
+
+    button {
+      background: black;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center; margin-bottom: 20px; font-family: Arial; color: #333;">Sign Up</h2>
+
+  <form action="/submit" method="post" onsubmit="return validateForm()">
+    <div class="field-group">
+      <input type="text" id="name" name="name" placeholder="Name" />
+      <div id="nameError" class="error"></div>
+      <div id="nameSuccess" class="success"></div>
+    </div>
+
+    <div class="field-group">
+      <input type="email" id="email" name="email" placeholder="Email" />
+      <div id="emailError" class="error"></div>
+      <div id="emailSuccess" class="success"></div>
+    </div>
+
+    <div class="field-group">
+      <input type="text" id="age" name="age" placeholder="Age" />
+      <div id="ageError" class="error"></div>
+      <div id="ageSuccess" class="success"></div>
+    </div>
+
+    <div class="field-group">
+      <input type="text" id="phone" name="phone" placeholder="Phone Number" />
+      <div id="phoneError" class="error"></div>
+      <div id="phoneSuccess" class="success"></div>
+    </div>
+
+    <!-- Password -->
+    <div class="field-group">
+      <input type="password" id="password" name="password" placeholder="Password" />
+      <i class="toggle-password" onclick="togglePassword('password', this)"></i>
+      <div id="passwordError" class="error"></div>
+      <div id="passwordSuccess" class="success"></div>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="field-group">
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+      <i class="toggle-password" onclick="togglePassword('confirmPassword', this)"></i>
+      <div id="confirmPasswordError" class="error"></div>
+      <div id="confirmPasswordSuccess" class="success"></div>
+    </div>
+
+    <div class="field-group">
+      <select id="course" name="course">
+        <option value="">Select Course</option>
+        <option value="Web Development">Web Development</option>
+        <option value="AI">AI</option>
+        <option value="Data Science">Data Science</option>
+      </select>
+      <div id="courseError" class="error"></div>
+      <div id="courseSuccess" class="success"></div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function togglePassword(fieldId, icon) {
+      const input = document.getElementById(fieldId);
+      if (input.type === "password") {
+        input.type = "text";
+        icon.classList.add("show");
+      } else {
+        input.type = "password";
+        icon.classList.remove("show");
+      }
+    }
+
+    function validateForm() {
+      let valid = true;
+
+      // Inputs
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const age = document.getElementById("age").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const confirmPassword = document.getElementById("confirmPassword").value.trim();
+      const course = document.getElementById("course").value;
+
+      // Clear all messages
+      const fields = ["name", "email", "age", "phone", "password", "confirmPassword", "course"];
+      fields.forEach(field => {
+        document.getElementById(field + "Error").innerText = "";
+        document.getElementById(field + "Success").innerText = "";
+      });
+
+      // Name
+      if (name === "") {
+        document.getElementById("nameError").innerText = "Name is required";
+        valid = false;
+      } else {
+        document.getElementById("nameSuccess").innerText = "Looks good!";
+      }
+
+      // Email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email === "") {
+        document.getElementById("emailError").innerText = "Email is required";
+        valid = false;
+      } else if (!emailRegex.test(email)) {
+        document.getElementById("emailError").innerText = "Enter a valid email";
+        valid = false;
+      } else {
+        document.getElementById("emailSuccess").innerText = "Valid email!";
+      }
+
+      // Age
+      if (age === "") {
+        document.getElementById("ageError").innerText = "Age is required";
+        valid = false;
+      } else if (isNaN(age) || age < 10 || age > 100) {
+        document.getElementById("ageError").innerText = "Enter a valid age";
+        valid = false;
+      } else {
+        document.getElementById("ageSuccess").innerText = "Valid age!";
+      }
+
+      // Phone
+      const phoneRegex = /^[6-9]\d{9}$/;
+      if (phone === "") {
+        document.getElementById("phoneError").innerText = "Phone number is required";
+        valid = false;
+      } else if (!phoneRegex.test(phone)) {
+        document.getElementById("phoneError").innerText = "Enter a valid 10-digit phone number";
+        valid = false;
+      } else {
+        document.getElementById("phoneSuccess").innerText = "Valid phone number!";
+      }
+
+      // Password
+      if (password === "") {
+        document.getElementById("passwordError").innerText = "Password is required";
+        valid = false;
+      } else if (password.length < 6) {
+        document.getElementById("passwordError").innerText = "At least 6 characters";
+        valid = false;
+      } else {
+        document.getElementById("passwordSuccess").innerText = "Good password!";
+      }
+
+      // Confirm Password
+      if (confirmPassword === "") {
+        document.getElementById("confirmPasswordError").innerText = "Please confirm password";
+        valid = false;
+      } else if (confirmPassword !== password) {
+        document.getElementById("confirmPasswordError").innerText = "Passwords do not match";
+        valid = false;
+      } else {
+        document.getElementById("confirmPasswordSuccess").innerText = "Matched!";
+      }
+
+      // Course
+      if (course === "") {
+        document.getElementById("courseError").innerText = "Please select a course";
+        valid = false;
+      } else {
+        document.getElementById("courseSuccess").innerText = "Course selected!";
+      }
+
+      return valid;
+    }
+  </script>
+</body>
+</html>
+</script>
+     
+</body>
+</html>
+
+</body>
+</html>
